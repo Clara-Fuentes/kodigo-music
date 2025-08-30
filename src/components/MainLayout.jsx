@@ -1,11 +1,13 @@
 
 import React from 'react';
 import Sidebar from './Sidebar.jsx';
+import VideoBackground from './VideoBackground.jsx';
 import styles from './MainLayout.module.css';
 
 const MainLayout = ({ children }) => {
   return (
     <div className={styles.layout}>
+      <VideoBackground /> {/* Fondo de video */}
       <Sidebar />
       <main className={styles.mainContent}>
         {children}

@@ -4,8 +4,9 @@
 }
 
 .mainContent {
-  flex-grow: 1; /* Hace que ocupe todo el espacio restante */
+  flex-grow: 1; 
   padding: 24px;
   height: 100vh;
   overflow-y: auto; /* Permite scroll si el contenido es muy largo */
+   background-color: rgba(18, 18, 18, 0.1); 
 }

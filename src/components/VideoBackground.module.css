@@ -1,0 +1,13 @@
+
+.video {
+  position: fixed; /* Lo fija en la pantalla */
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%; 
+  width: auto;
+  height: auto;
+  z-index: -1; /* Lo envía detrás de todo el contenido */
+  object-fit: cover; 
+  filter: opacity(0.7);
+}
