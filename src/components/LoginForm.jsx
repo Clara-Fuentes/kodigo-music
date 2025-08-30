@@ -4,21 +4,21 @@ import { useForm } from 'react-hook-form';
 import styles from './LoginForm.module.css';
 
 const LoginForm = () => {
-  // 2. Inicializamos el hook
+  // Inicializamos el hook
   const {
     register, // Función para "registrar" un input y sus validaciones
     handleSubmit, // Función que envuelve nuestro manejador de envío
     formState: { errors }, // Objeto que contiene los errores de validación
   } = useForm();
 
-  // 3. Esta función se ejecutará SOLO si el formulario es válido
+  // Esta función se ejecutará SOLO si el formulario es válido
   const onSubmit = (data) => {
     console.log('Formulario enviado con éxito:', data);
     alert(`Bienvenido! (Datos en la consola)`);
   };
 
   return (
-    // 4. Usamos handleSubmit para envolver nuestra función onSubmit
+    // Usamos handleSubmit para envolver nuestra función onSubmit
     <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
       <h2>Iniciar Sesión</h2>
 
@@ -27,7 +27,7 @@ const LoginForm = () => {
         <input
           id="email"
           type="email"
-          // 5. Registramos el input y añadimos reglas de validación
+          // Registramos el input y añadimos reglas de validación
           {...register('email', {
             required: 'El email es obligatorio',
             pattern: {
@@ -37,7 +37,7 @@ const LoginForm = () => {
           })}
           className={errors.email ? styles.inputError : ''}
         />
-        {/* 6. Mostramos el mensaje de error si existe */}
+        {/* Mostramos el mensaje de error si existe */}
         {errors.email && <p className={styles.errorMessage}>{errors.email.message}</p>}
       </div>
 

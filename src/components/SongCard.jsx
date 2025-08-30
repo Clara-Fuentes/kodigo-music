@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './SongCard.module.css';
 import { FaPlay } from 'react-icons/fa'; // Icono de Play
 
-// 1. Recibimos los datos de la canción a través de "props"
+// Recibimos los datos de la canción a través de "props"
 const SongCard = ({ title, artist, imageUrl }) => {
   return (
     <div className={styles.card}>

@@ -20,7 +20,7 @@ const HomePage = () => {
     <div className={styles.homeContainer}>
       <h1>¡Buenas noches!</h1>
 
-      {/* 2. Aquí empieza la magia :D */}
+      {/* Aquí empieza la magia :D */}
       <div className={styles.songGrid}>
         {songs.map((song) => (
           <SongCard

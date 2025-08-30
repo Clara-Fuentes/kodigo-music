@@ -8,7 +8,7 @@ import './styles/global.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter> {/* <-- 2. ENVUELVE APP */}
+    <BrowserRouter> {/* <--  ENVUELVE APP */}
       <App />
     </BrowserRouter>
   </React.StrictMode>,

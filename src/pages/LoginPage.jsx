@@ -5,7 +5,7 @@ import LoginForm from '../components/LoginForm.jsx'; // Importamos nuestro compo
 const LoginPage = () => {
   return (
     <div>
-      {/* Aquí podremos añadir más elementos*/}
+      {/* Aquí se podrían añadir más elementos */}
       <LoginForm />
     </div>
   );
