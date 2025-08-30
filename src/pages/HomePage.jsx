@@ -1,8 +1,7 @@
 
-import React, { useState } from 'react'; // 1. Importamos useState
-import styles from './HomePage.module.css'; 
+import React, { useState } from 'react';
+import styles from './HomePage.module.css';
 import SongCard from '../components/SongCard.jsx';
-
 
 const mockSongs = [
   { id: 1, title: 'Bohemian Rhapsody', artist: 'Queen', imageUrl: 'https://picsum.photos/seed/picsum1/300/300' },
@@ -16,15 +15,29 @@ const mockSongs = [
 const HomePage = () => {
   const [songs, setSongs] = useState(mockSongs);
 
+  // --- Inicio del Saludo ---
+  const getGreeting = () => {
+    const currentHour = new Date().getHours(); // Obtiene la hora actual (formato 0-23)
+
+    if (currentHour < 12) {
+      return 'Buenos días';
+    } else if (currentHour < 19) {
+      return 'Buenas tardes';
+    } else {
+      return 'Buenas noches';
+    }
+  };
+  // --- Fin del Saludo ---//
+
   return (
     <div className={styles.homeContainer}>
-      <h1>¡Buenas noches!</h1>
-
-      {/* Aquí empieza la magia :D */}
+      {/* mostrar el saludo dinámico */}
+      <h1>¡{getGreeting()}!</h1>
+      
       <div className={styles.songGrid}>
         {songs.map((song) => (
           <SongCard
-            key={song.id} // key prop para React
+            key={song.id}
             title={song.title}
             artist={song.artist}
             imageUrl={song.imageUrl}

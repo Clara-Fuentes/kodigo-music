@@ -1,6 +1,6 @@
 
 import React from 'react';
-import videoSource from '../assets/background-video.mp4'; // Asegúrate de tener un video en esta ruta
+import videoSource from '../assets/background-video.mp4'; 
 import styles from './VideoBackground.module.css';
 
 const VideoBackground = () => {
