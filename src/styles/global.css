@@ -1,0 +1,22 @@
+
+:root {
+  --bg-dark: #121212;
+  --bg-light: #181818;
+  --primary-text: #FFFFFF;
+  --secondary-text: #b3b3b3;
+  
+  /* Tomados de la inspiración de Spotify */
+  --gradient-color-1: #400073;
+  --gradient-color-2: #8000FF;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--primary-text);
+}
+
+* {
+  box-sizing: border-box;
+}

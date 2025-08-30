@@ -1,0 +1,56 @@
+
+.sidebar {
+  background-color: #000000;
+  width: 240px;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  margin-bottom: 24px;
+}
+
+.logo h2 {
+  margin: 0;
+  color: var(--primary-text);
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  margin-bottom: 16px;
+}
+
+.navLink {
+  color: var(--secondary-text);
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Espacio entre el icono y el texto */
+  transition: color 0.2s ease-in-out;
+}
+
+.navLink:hover {
+  color: var(--primary-text);
+}
+
+.loginLinkContainer {
+    margin-top: auto; /* Empuja este elemento hacia abajo */
+}
+
+.loginLink {
+    color: var(--secondary-text);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.loginLink:hover {
+    color: var(--primary-text);
+}
